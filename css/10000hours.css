@@ -47,3 +47,14 @@ img {
     height: auto;
     display: block;
 }
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
