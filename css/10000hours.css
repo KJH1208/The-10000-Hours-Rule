@@ -28,3 +28,22 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+:root {
+    --color-bg: #5B2386;
+    --color-primary: #FCEE21;
+    --color-secondary: #5B2386;
+    --color-text: #FFFFFF;
+
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'GmarketSansmedium', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
