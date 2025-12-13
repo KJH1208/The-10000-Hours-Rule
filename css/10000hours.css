@@ -105,6 +105,72 @@ main {
     line-height: 1.2;
     color : var(--color-primary);
 }
+/* Intro Section */ 
+.intro-section {
+    text-align: center;
+    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width:486px;
+    height: 86px;
+    position: relative;
+}
+.quote-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 100%;               /* section 폭 전체를 덮게 */
+    height: 100%;              /* section 높이 전체를 덮게 */
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 1;
+}
+.intro-text {
+    position : relative;
+    z-index: 2;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+.intro-text .highlight {
+  font-size: 24px;
+  font-family: 'GmarketSansBold', sans-serif;  /* 강조 느낌 */
+  color: var(--color-text); /* 스샷처럼 흰색이면 */
+}
+
+/* 나머지 문장 18px */
+.intro-text {
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sr-only {
     position: absolute;
