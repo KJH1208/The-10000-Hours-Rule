@@ -97,6 +97,13 @@ main {
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+.hero .subtitle {
+    margin-top: 24px;
+    font-family: "OTEnjoystoriesBA", sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    color : var(--color-primary);
+}
 
 .sr-only {
   position: absolute;
