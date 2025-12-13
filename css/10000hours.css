@@ -59,6 +59,12 @@ button {
   display: none !important;
 }
 
+main {
+    max-width :var(--content-width);
+    margin : 0 auto;
+    padding : 40px 20px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
