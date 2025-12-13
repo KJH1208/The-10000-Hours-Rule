@@ -65,6 +65,39 @@ main {
     padding : 40px 20px;
 }
 
+.hero {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero .title {
+    position: relative;
+    display:inline-block;
+    width: 564px;
+    height: 265px;
+}
+.hero .title img:first-child {
+    position: relative;
+    z-index :2;
+    width: 528px;
+    height: 112px;
+
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+}
+.hero .title img:last-child {
+    position: absolute;
+    z-index: 1;
+    width: 262px;
+    height: 264px;
+
+    left: 50%;
+    top: 22%; 
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
