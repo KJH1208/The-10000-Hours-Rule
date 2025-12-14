@@ -198,12 +198,9 @@ main {
 }
 
 .calculate-button {
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
     width: 566px;
     height: 64px;
-    /* padding: 20px 50px; */
+    padding: 20px 50px;
     background-color: var(--color-primary);
     color: var(--color-secondary);
 
@@ -223,22 +220,34 @@ main {
 
 }
     .calculate-button:hover {
-        filter: bringhtness(1.02);
+        filter: brightness(1.02);
     }
     .calculate-button:active {
         transform: translateY(2px);
         box-shadow: 0 4px 0 rgba(0, 0, 0, 15%);
     }
 .calculate-button:focus-visible {
-    outline: 3px solid rgba(0, 0, 0, 15%)
+    outline: 3px solid rgba(0, 0, 0, 0.15);
+    outline-offset: 4px;
 }
+.calculate-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;              /* 버튼-아이콘 간격 */
 
+    margin: 100px auto 0;  /* 기존 버튼 margin-top을 래퍼로 이동 */
+    width: fit-content;    /* 내용물(버튼+아이콘)만큼만 래퍼 폭 */
+}
+.click-icon {
+    width: 64px;
+    height: 72px;
+    flex-shrink:0;
+    display: block;
 
-
-
-
-
-
+    pointer-events: none;
+    transform:  translateY(4px);
+}
 
 .sr-only {
     position: absolute;
