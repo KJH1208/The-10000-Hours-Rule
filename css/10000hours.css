@@ -109,6 +109,7 @@ main {
 .intro-section {
     text-align: center;
     margin-top: 105px;
+    margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
 
@@ -147,18 +148,54 @@ main {
   font-size: 18px;
 }
 
+.calculator {
+    padding: 40px 20px;
+}
+.calculatorform {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-group {
+    display : flex;
+    justify-content: center;
+}
 
+.input-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: GmarketSansMedium, sans-serif;
+    font-size: 24px;
+    color: var(--color-text);
+    line-height: 1.2;
+    white-space: nowrap;
 
+    letter-spacing: 0.04em;
+}
 
+.input-field {
+    width:228px;
+    height: 56px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    background:#FFF;
 
-
-
-
-
-
-
-
-
+    padding: 0 16px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+}
+.input-field::placeholder {
+    color: #BABCBE;
+    text-align: center;
+}
+.input-field--small {
+    width: 228px;
+    height: 56px;
+}
 
 
 
