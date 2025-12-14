@@ -137,15 +137,15 @@ main {
     color: var(--color-text);
 }
 .intro-text .highlight {
-  font-size: 24px;
-  font-family: 'GmarketSansBold', sans-serif;  /* 강조 느낌 */
-  color: var(--color-text); /* 스샷처럼 흰색이면 */
+    font-size: 24px;
+    font-family: 'GmarketSansBold', sans-serif;  /* 강조 느낌 */
+    color: var(--color-text); /* 스샷처럼 흰색이면 */
 }
 
 /* 나머지 문장 18px */
 .intro-text {
-  font-family: 'GmarketSansMedium', sans-serif;
-  font-size: 18px;
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 18px;
 }
 
 .calculator {
@@ -204,7 +204,7 @@ main {
     background-color: var(--color-primary);
     color: var(--color-secondary);
 
-    font-family: GmarketSansBold, sans-serif;
+    font-family: 'GmarketSansBold', sans-serif;
     font-size:24px;
     line-height: 1;
     border-radius:12px;
@@ -249,9 +249,20 @@ main {
     transform:  translateY(4px);
 }
 
+.result-section {
+    margin-top: 100px;
+    text-align: center;
+}
+.result-text {
+    font-family: 'GmarketSansMedium', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
 
-
-
+.result-value, .result-number {
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 72px;
+}
 
 
 
