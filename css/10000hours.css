@@ -312,6 +312,81 @@ main {
     outline-offset: 4px;
 }
 
+#cheerDialog {
+    width:800px;
+    height:800px;
+    border:none;
+    border-radius:20px;
+    padding : 0;
+    background:#fff;
+}
+#cheerDialog::backdrop {
+    background: rgba(4, 4, 30, 0.15);
+}
+#cheerDialog .dialog-content {
+    height: 100%;
+    padding: 80px 32px 60px;
+    box-sizing: border-box;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+#cheerDialog .dialog-content h2 {
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    font-size: 96px;
+    color: var(--color-secondary);
+    margin: 0;
+}
+#cheerDialog .dialog-content p {
+    font-family: 'OTEnjoystoriesBA', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--color-secondary);
+    margin: 16px 0 40px;
+}
+#cheerDialog .dialog-content img {
+    width :438px;
+    height: 342px;
+    object-fit: contain;
+    display:block;
+}
+#cheerDialog form {
+    margin:0;
+}
+
+#cheerDialog form {
+    margin-top:40px;
+}
+#cheerDialog button {
+    width:508px;
+    height:64px;
+    padding: 0 24px;
+    box-sizing: border-box;
+
+    background-color: var(--color-primary);
+    color:var(--color-secondary);
+
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 24px;
+    line-height: 1;
+
+    border-radius:12px;
+    box-shadow: 2px 4px 10px rgba(2, 4, 10, 0.15);
+
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s ease;
+}
+
+
+
 
 
 
