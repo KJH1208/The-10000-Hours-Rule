@@ -251,6 +251,7 @@ main {
 
 .result-section {
     margin-top: 100px;
+    margin-bottom: 120px;
     text-align: center;
 }
 .result-text {
@@ -264,7 +265,39 @@ main {
     font-size: 72px;
 }
 
+.action-btn {
+    text-align: center;    
+}
+.actions-section {
+    display:flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.btn {
+    padding: 14px 18px;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 
+    font-family: 'GmarketSansBold', sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    border-radius:12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.btn--primary {
+    width: 365px;
+    height: 64px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.btn--secondary {
+    width:193px;
+    height: 64px;
+    background-color: white;
+    color: var(--color-secondary);
+}
 
 
 
