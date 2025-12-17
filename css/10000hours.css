@@ -224,10 +224,10 @@ main {
     }
     .calculate-button:active {
         transform: translateY(2px);
-        box-shadow: 0 4px 0 rgba(0, 0, 0, 15%);
+        box-shadow: 0 4px 0 rgba(2, 4, 10, 15%);
     }
 .calculate-button:focus-visible {
-    outline: 3px solid rgba(0, 0, 0, 0.15);
+    outline: 3px solid rgba(2, 4, 10, 0.15);
     outline-offset: 4px;
 }
 .calculate-wrap {
@@ -284,7 +284,7 @@ main {
     font-size: 24px;
     line-height: 1;
     border-radius:12px;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 4px 10px rgba(2, 4, 10, 0.15);
 }
 .btn--primary {
     width: 365px;
@@ -304,14 +304,13 @@ main {
 
 .btn:active {
     transform: translateY(2px);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 6px rgba(2, 4, 10, 0.15);
 }
 
 .btn:focus-visible {
-    outline: 3px solid rgba(0, 0, 0, 0.15);
+    outline: 3px solid rgba(2, 4, 10, 0.15);
     outline-offset: 4px;
 }
-
 
 
 
