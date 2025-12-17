@@ -396,11 +396,19 @@ main {
     outline-offset: 4px;
 }
 
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 12px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--color-text);
+}
 
-
-
-
-
+.footer .logo {
+    margin: 0 auto 20px;
+    width: 168px;
+    height: auto;
+}
 
 .sr-only {
     position: absolute;
