@@ -384,6 +384,18 @@ main {
     cursor: pointer;
     transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.15s ease;
 }
+#cheerDialog button:hover {
+    filter: brightness(1.02);
+}
+#cheerDialog button:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 6px rgba(2, 4, 10, 0.15);
+}
+#cheerDialog button:focus-visible {
+    outline: 3px solid rgba(2, 4, 10, 0.15);
+    outline-offset: 4px;
+}
+
 
 
 
