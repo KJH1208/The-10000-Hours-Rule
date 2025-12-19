@@ -48,7 +48,7 @@
 배포 예정 (GitHub Pages)
 
 ```
-https://[username].github.io/10000hours
+https://KJH1208.github.io/10000hours
 ```
 
 ---
