@@ -456,19 +456,29 @@ main {
         z-index: 2;
     }
     .hero .title img:last-child {
-        width: min(220px, 60vw);
+        position: relative;
+        width: min(160px, 50vw);
         height: auto;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.2;
+        left: 0;
+        top: -50px;  
+        transform: none;
+        z-index: 1;
+        opacity: 0.3;
+        margin-top: -60px;
     }
     .hero .subtitle {
-        margin-top: 198px;
+        margin-top: 20px;
+        transform: none;
         font-size: 22px;
+        line-height: 1.4;
+        padding: 0 16px;
     }
     .intro-section {
-        margin: 48px auto 64px;
-        padding: 12px 8px;
+        width: 90%;
+        height: auto;
+        min-height: 100px;
+        margin: 60px auto 80px;
+        padding: 20px 16px;
     }
     .quote-icon {
         width: 100%;
@@ -476,90 +486,136 @@ main {
     }
 
     .intro-text {
-        font-size: 22px;
+        font-size: 14px;
+        line-height: 2;  /* 1.6에서 2로 증가 */
+        word-break: keep-all;
     }
     .intro-text .highlight {
-        font-size: 22px;
+        font-size: 14px;
     }
       /* ===== INPUT 영역 ===== */
     .calculator { padding: 24px 0; }
 
     .input-label {
-    white-space: normal;      
-    flex-wrap: wrap;
-    gap: 12px;
-    font-size: 18px;
-    line-height: 1.4;
-    justify-content: center;
-    text-align: center;
+        white-space: nowrap;  
+        flex-wrap: nowrap; 
+        gap: 8px;             
+        font-size: 14px;
+        line-height: 1.4;
+        justify-content: center;
+        text-align: center;
     }
 
     .input-field,
     .input-field--small {
-    width: min(228px, 80vw);     
-    height: 56px;
-    font-size: 18px;
+        width: min(156px, 85vw);     
+        height: 38px;
+        font-size: 14px;
     }
 
   /* ===== 계산 버튼 + 손가락 아이콘 ===== */
     .calculate-wrap {
-    width: 100%;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 48px;           
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 60px;       
     }
 
   /* 버튼은 아이콘(72px) + 간격(8px) 남긴 폭만 사용 */
     .calculate-button {
-    width: min(567px, calc(100% - 72px - 8px));
-    height: 64px;
-    padding: 20px 20px;
-    font-size: 18px;
-    text-align: center;
+        width: min(280px, 85vw);
+        height: 56px;
+        padding: 16px 24px;
+        font-size: 18px;
+        text-align: center;
+        order: 2;
     }
 
     .click-icon {
-    width: 64px;
-    height: 72px;
-    transform: translateY(0); 
+        width: 48px;
+        height: 54px;
+        transform: translateY(8px);
+        order: 1;
+        margin-bottom: 8px;
     }
 
   /* ===== 결과 ===== */
-    .result-section { margin: 48px 0 64px; }
-    .result-text { font-size: 18px; }
-    .result-value, .result-number { font-size: clamp(40px, 12vw, 64px); }
+    .result-section { margin: 80px 0 80px;  }
+    .result-text { 
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 12px; }
+    .result-value, .result-number { 
+        font-size: clamp(48px, 15vw, 72px);
+        line-height: 1.2; 
+    }
 
   /* ===== action 버튼들 ===== */
     .actions-section {
     flex-direction: column;     
-    gap: 12px;
-    align-items: center;
+        gap: 12px;
+        align-items: center;
+        width: 100%;
     }
 
-    .btn--primary,
+    .btn--primary {
+        width: min(280px, 85vw);
+        height: 56px;
+        font-size: 18px;
+        order: 1;
+    }
+
     .btn--secondary {
-    width: min(567px, 100%);
-    height: 64px;
-    font-size: 18px;
+        width: min(160px, 70vw);
+        height: 56px;
+        font-size: 16px;
+        order: 2;
     }
 
   /* ===== dialog(모달) 모바일 대응 ===== */
     #cheerDialog {
-    width: min(800px, calc(100% - 24px));
-    height: auto;
-    max-height: calc(100vh - 24px);
+        width: min(90vw, 400px);
+        height: auto;
+        max-height: 90vh;
+        border-radius: 16px;
+    }
+
+    #cheerDialog .dialog-content {
+        padding: 40px 24px 40px;
+    }
+
+    #cheerDialog .dialog-content h2 {
+        font-size: 56px;
+    }
+
+    #cheerDialog .dialog-content p {
+        font-size: 24px;
+        margin: 12px 0 24px;
     }
 
     #cheerDialog .dialog-content img {
-    width: min(438px, 80vw);
-    height: auto;
+        width: min(280px, 70vw);
+        height: auto;
+    }
+
+    #cheerDialog form {
+        margin-top: 24px;
     }
 
     #cheerDialog form button {
-    width: min(508px, 100%);
-    font-size: 18px;
-}
+        width: min(280px, 80vw);
+        height: 56px;
+        font-size: 18px;
+    }
 
     /* footer */
-    .footer { padding: 24px 16px; }
+    .footer { 
+        padding: 32px 16px; 
+    }
+    
+    .footer .logo {
+        width: 140px;
+        margin-bottom: 16px;
+    }
 }
