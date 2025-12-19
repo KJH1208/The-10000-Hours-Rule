@@ -435,23 +435,25 @@ main {
 @media (max-width: 480px) {
     main {padding: 24px 16px;} 
 
+    .hero { padding-top: 48px; }
+
     .hero .title {
+        width: 100%;
+        height: auto;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 31px;
-        width: auto;
-        height: auto;
-        width: min(564px, 92vw);
-        height: auto;
+        gap: 0;
     }
 
     .hero .title img:first-child {
-        width: 100%;
+        position: relative;
+        width: min(320px, 85vw);
         height: auto;
         left: 0;
+        top: 0;
         transform: none;
-        margin: 0 auto;
+        z-index: 2;
     }
     .hero .title img:last-child {
         width: min(220px, 60vw);
@@ -465,7 +467,6 @@ main {
         font-size: 22px;
     }
     .intro-section {
- 
         margin: 48px auto 64px;
         padding: 12px 8px;
     }
