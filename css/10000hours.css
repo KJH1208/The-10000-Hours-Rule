@@ -474,4 +474,85 @@ main {
     .intro-text .highlight {
         font-size: 14px;
     }
+      /* ===== INPUT 영역 ===== */
+    .calculator { padding: 24px 0; }
+
+    .input-label {
+    white-space: normal;      
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 18px;
+    line-height: 1.4;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .input-field,
+    .input-field--small {
+    width: min(228px, 80vw);     
+    height: 56px;
+    font-size: 18px;
+    }
+
+  /* ===== 계산 버튼 + 손가락 아이콘 ===== */
+    .calculate-wrap {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 48px;           
+    }
+
+  /* 버튼은 아이콘(72px) + 간격(8px) 남긴 폭만 사용 */
+    .calculate-button {
+    width: min(567px, calc(100% - 72px - 8px));
+    height: 64px;
+    padding: 20px 20px;
+    font-size: 18px;
+    text-align: center;
+    }
+
+    .click-icon {
+    width: 64px;
+    height: 72px;
+    transform: translateY(0); 
+    }
+
+  /* ===== 결과 ===== */
+    .result-section { margin: 48px 0 64px; }
+    .result-text { font-size: 18px; }
+    .result-value, .result-number { font-size: clamp(40px, 12vw, 64px); }
+
+  /* ===== action 버튼들 ===== */
+    .actions-section {
+    flex-direction: column;     
+    gap: 12px;
+    align-items: center;
+    }
+
+    .btn--primary,
+    .btn--secondary {
+    width: min(567px, 100%);
+    height: 64px;
+    font-size: 18px;
+    }
+
+  /* ===== dialog(모달) 모바일 대응 ===== */
+    #cheerDialog {
+    width: min(800px, calc(100% - 24px));
+    height: auto;
+    max-height: calc(100vh - 24px);
+    }
+
+    #cheerDialog .dialog-content img {
+    width: min(438px, 80vw);
+    height: auto;
+    }
+
+    #cheerDialog form button {
+    width: min(508px, 100%);
+    font-size: 18px;
+}
+
+    /* footer */
+    .footer { padding: 24px 16px; }
 }
