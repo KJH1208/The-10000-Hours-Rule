@@ -434,8 +434,44 @@ main {
 @media (max-width: 480px) {
     main {padding: 24px 16px;}
 
+    .hero {
+        padding-top: 36px;
+    }
+
     .hero .title {
         width: min(564px, 92vw);
         height: auto;
+    }
+
+    .hero .title img:first-child {
+        width: 100%;
+        height: auto;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+    }
+    .hero .title img:last-child {
+        width: min(220px, 60vw);
+        height: auto;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.2;
+    }
+    .intro-section {
+        width: auto;
+        height: auto;
+        margin: 48px auto 64px;
+        padding: 0 8px;
+    }
+    .quote-icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro-text {
+        font-size: 22px;
+    }
+    .intro-text .highlight {
+        font-size: 14px;
     }
 }
