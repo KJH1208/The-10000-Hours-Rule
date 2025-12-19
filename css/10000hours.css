@@ -40,6 +40,7 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: 'GmarketSansmedium', sans-serif;
+    overflow-x: hidden;
 }
 
 img {
@@ -428,4 +429,13 @@ main {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+}
+/* 모바일 반응형 */
+@media (max-width: 480px) {
+    main {padding: 24px 16px;}
+
+    .hero .title {
+        width: min(564px, 92vw);
+        height: auto;
+    }
 }
